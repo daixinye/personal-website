@@ -9,7 +9,7 @@
   },
   "scripts": {
     "build": "webpack --config webpack.prod.js",
-    "start": "webpack-dev-server webpack.dev.js",
+    "start": "webpack-dev-server --config webpack.dev.js",
     "server": "node ./server/dev-server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -24,6 +24,9 @@
   },
   "homepage": "https://github.com/daixinye/personal-website#readme",
   "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "babel": "^6.23.0",
+    "babel-loader": "^8.0.5",
     "clean-webpack-plugin": "^2.0.1",
     "css-loader": "^2.1.1",
     "eslint": "^5.16.0",
@@ -37,6 +40,9 @@
     "prettier": "^1.16.4",
     "style-loader": "^0.23.1",
     "uglifyjs-webpack-plugin": "^2.1.2",
+    "vue": "^2.6.10",
+    "vue-loader": "^15.7.0",
+    "vue-template-compiler": "^2.6.10",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.3.0",
     "webpack-dev-middleware": "^3.6.2",

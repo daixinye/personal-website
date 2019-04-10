@@ -1,5 +1,14 @@
-import './src/style.css'
+import Vue from 'vue'
+import app from './src/app.vue'
 
-window.onload = function () {
-  document.body.innerHTML = '<p class="hello">hello</p>'
-}
+window.addEventListener('DOMContentLoaded', () => {
+  document.body.innerHTML = '<div id="app"></div>'
+
+  Vue.component('app', app)
+  const App = new Vue({
+    el: '#app',
+    render: function (createElement) {
+      return createElement('app')
+    }
+  })
+})
