@@ -5,7 +5,7 @@ const VueLoaderPlugin = require('vue-loader/lib/plugin')
 
 module.exports = {
   entry: {
-    app: './main.js'
+    app: './frontend/main.js'
   },
   output: {
     filename: '[name].bundle.js',
@@ -31,7 +31,7 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: "dxy's personal website"
+      title: 'daixinye'
     }),
     new VueLoaderPlugin()
   ]

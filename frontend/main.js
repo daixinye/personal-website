@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import app from './src/app.vue'
+import app from './app.vue'
 
 window.addEventListener('DOMContentLoaded', () => {
   document.body.innerHTML = '<div id="app"></div>'
